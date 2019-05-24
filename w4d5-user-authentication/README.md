@@ -36,7 +36,7 @@ You can run the email/password registration page without configuration.
 
 To use the OAuth route first sign up on [Auth0](https://auth0.com/) and create an Auth0 application and a [Github Oauth application](https://auth0.com/docs/connections/social/github).
 
-Once you're setup replace AUTH0_CLIENT_ID and AUTH0_DOMAIN in [auth.service.ts](./src/app/services/auth.service.ts);
+Once you're setup replace AUTH0_CLIENT_ID and AUTH0_DOMAIN in [auth.service.ts](./angular-demo/src/app/services/auth.service.ts);
 
 Then run
 

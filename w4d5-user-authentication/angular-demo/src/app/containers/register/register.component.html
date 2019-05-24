@@ -1,0 +1,9 @@
+<div class="body" fxLayout="column">
+  <div fxLayout.gt-sm="row" fxLayout.lt-md="column">
+    <app-client (submit)="onSubmit($event)"></app-client>
+
+    <app-backend [processes]="processes"></app-backend>
+  </div>
+
+  <app-database [users]="users"></app-database>
+</div>

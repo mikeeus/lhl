@@ -1,0 +1,20 @@
+<div class="database" fxFlex="auto">
+  <h2>Database</h2>
+
+  <ul fxLayout="column" class="table">
+    <li fxLayout="row" fxLayoutAlign="start center" class="table-header">
+      <div fxFlex="8rem">Name</div>
+      <div fxFlex="auto">Email</div>
+      <div fxFlex="10rem">Password Digest</div>
+      <div fxFlex="10rem">Provider</div>
+      <div fxFlex="10rem">Token</div>
+    </li>
+    <li class="table-row" fxLayout="row" fxLayoutAlign="start center" *ngFor="let user of users">
+      <div fxFlex="8rem">{{user.name}}</div>
+      <div fxFlex="auto">{{user.email}}</div>
+      <div fxFlex="10rem">{{user.passwordDigest || 'NULL'}}</div>
+      <div fxFlex="10rem">{{user.provider}}</div>
+      <div fxFlex="10rem">{{user.token || 'NULL'}}</div>
+    </li>
+  </ul>
+</div>

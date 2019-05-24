@@ -1,0 +1,22 @@
+@import 'src/variables.scss';
+
+.database {
+
+  .table {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: $box-shadow;
+
+    &-header {
+      padding: 0.3rem 1rem;
+      border-bottom: 1px solid grey;
+    }
+
+    &-row {
+      padding: 0.3rem 1rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+}

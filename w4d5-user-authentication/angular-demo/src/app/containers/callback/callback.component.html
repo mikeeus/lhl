@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Callback Route</h1>
+
+  <ng-template #loading>
+    <p style="text-align: center;">Loading...</p>
+  </ng-template>
+
+  <div class="wrapper" fxLayout="row" fxLayoutGap="2rem">
+    <section class="profile">
+      <h2>Authenticated User</h2>
+
+      <div fxLayout="column">
+        <img [src]="result.idTokenPayload?.picture" width="200px" height="200px">
+
+        <h3>{{result.idTokenPayload?.name}}</h3>
+        <span>{{result.idTokenPayload?.nickname}}</span>
+      </div>
+    </section>
+
+    <section class="result">
+      <h2>Raw Result</h2>
+
+      <pre>{{ result | json }}</pre>
+    </section>
+  </div>
+</div>

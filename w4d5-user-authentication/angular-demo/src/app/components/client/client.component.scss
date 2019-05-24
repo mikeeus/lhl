@@ -1,0 +1,58 @@
+@import 'src/variables.scss';
+
+form {
+
+  .form-control {
+
+    &.error {
+      label {
+        color: $error-color;
+      }
+
+      input {
+        border: 1px solid $error-color;
+      }
+
+    }
+
+    .error-message {
+      line-height: 2rem;
+      height: 2rem;
+      width: 100%;
+      color: $error-color;
+      font-size: 0.8rem;
+      text-align: end;
+    }
+
+    .form-input {
+      width: 100%;
+    }
+    // label {}
+
+    input {
+      padding: 0.5rem;
+      border: 0;
+      border-radius: 0.1rem;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  button[type=submit] {
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: all 100ms ease-in-out;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.85);
+    }
+
+    &:disabled {
+      background: rgba(0, 0, 0, 0.3);
+      cursor: not-allowed;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<div class="container" fxFill>
+  <header fxLayout="row" fxLayoutAlign="space-between center">
+    <span class="logo">User Authentication</span>
+
+    <nav>
+      <ul fxLayout="row">
+        <li>
+          <a routerLink="/register">Register</a>
+        </li>
+        <li>
+          <a routerLink="/login">Auth0 Login</a>
+        </li>
+        <!-- <li>
+          <a routerLink="/oauth">OAuth</a>
+        </li>
+        <li>
+          <a routerLink="/sso">SSO</a>
+        </li> -->
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer></footer>
+</div>
